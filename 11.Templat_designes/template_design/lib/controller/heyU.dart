@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:template_design/other/const.dart';
 import 'package:template_design/other/styles.dart';
 import 'package:template_design/other/utils.dart';
-import 'package:template_design/controller/bottomNavigation.dart';
+import 'package:template_design/controller/heyUHomeViewController.dart';
 
 
 
@@ -23,7 +23,7 @@ class HeyStateControllerState extends State<HeyStateController> {
 
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavController()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => HeyUHomeViewController()));
       },
       child: Container(
         height: Utils.isPhone(context) ? 40 : 50,

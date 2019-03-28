@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:template_design/controller/homeViewController.dart';
 import 'package:template_design/controller/heyU.dart';
-import 'package:template_design/controller/bottomNavigation.dart';
 
 
 void main() {
@@ -67,18 +66,18 @@ class ListOfLayoutsViewController extends StatelessWidget {
           ),
 
 
-          GestureDetector(
-            child: Center(
-              child: Container(
-                height: 50,
-                color: Colors.green,
-                child: Text("Bottom Navigation"),
-              ),
-            ),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavController()));
-            },
-          ),
+//          GestureDetector(
+//            child: Center(
+//              child: Container(
+//                height: 50,
+//                color: Colors.green,
+//                child: Text("Bottom Navigation"),
+//              ),
+//            ),
+//            onTap: () {
+//              Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavController()));
+//            },
+//          ),
 
 
 
