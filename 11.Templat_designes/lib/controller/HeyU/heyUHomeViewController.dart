@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:template_design/other/bottombar.dart';
+import 'package:template_design/other/Customization/bottombar.dart';
 import 'package:template_design/other/const.dart';
-import 'package:template_design/other/styles.dart';
+import 'package:template_design/other/utils.dart';
 import 'dart:math' as math;
+import 'usersViewController.dart';
+import 'groupsViewController.dart';
+
+
 
 
 class HeyUHomeViewController extends StatefulWidget {
+
+  UsersViewController usersVC = UsersViewController();
+  GroupsViewController groupsVC = GroupsViewController();
+  UsersViewController vc3 = UsersViewController();
+  UsersViewController vc4 = UsersViewController();
+
   @override
   createState() => HeyUHomeViewControllerState();
+
 }
 
 
@@ -15,42 +26,25 @@ class HeyUHomeViewController extends StatefulWidget {
 
 class HeyUHomeViewControllerState extends State<HeyUHomeViewController> {
 
+  Widget currentViewController;
+  var floatingButtonLocation = _CenterFloatFabLocation2();
+
+  @override
+  void initState() {
+    super.initState();
+    currentViewController = widget.usersVC;
+  }
+
   @override
   Widget build(BuildContext context) {
 
+
     return Scaffold(
 
-      appBar: AppBar(
-        title: Text(
-            "Message",
-            style: Styles.h4(context: context, textColor: Colors.black)
-        ),
-        backgroundColor: Colors.white,
-        elevation: 0.0,
-        leading: Container(
-          width: 200,
-          child: Text(
-              "Edit",
-              style: Styles.h5(context: context, textColor: Const.colorRedStart)
-          ),
-          padding: EdgeInsets.only(left: 20, top: 20),
-        ),
-        bottom: PreferredSize(
-            child: Container(color: Colors.grey, height: 1.0,),
-            preferredSize: Size.fromHeight(1.0)
-        ),
-        actions: <Widget>[
-          Container(
-            child: Icon(Icons.search, color: Const.colorRedStart, size: 28,),
-            padding: EdgeInsets.only(right: 20),
-          )
-        ],
-      ),
-
-
+      body: currentViewController,
       floatingActionButton: Container(
-        height: 65,
-        width: 65,
+        height: (Utils.isPhone() ? 50 : 65),
+        width: (Utils.isPhone() ? 50 : 65),
         child: FloatingActionButton(
           onPressed: (){},
           child: Icon(Icons.add),
@@ -59,10 +53,10 @@ class HeyUHomeViewControllerState extends State<HeyUHomeViewController> {
         ),
       ),
 
-      floatingActionButtonLocation: _CenterFloatFabLocation2(),
+      floatingActionButtonLocation: floatingButtonLocation,
       bottomNavigationBar: Bottombar(
-        height: 60,
-        iconSize: 28,
+        height: (Utils.isPhone() ? 45 : 60),
+        iconSize: (Utils.isPhone() ? 23 : 28),
         color: Colors.grey,
         selectedColor: Const.colorRedStart,
         items:[
@@ -71,6 +65,31 @@ class HeyUHomeViewControllerState extends State<HeyUHomeViewController> {
           BottombarItem(iconData: Icons.menu),
           BottombarItem(iconData: Icons.perm_identity),
         ],
+        onTabSelected: (index) {
+          setState(() {
+
+            switch (index) {
+              case 0: {
+                currentViewController = widget.usersVC;
+                break;
+              }
+              case 1: {
+                currentViewController = widget.groupsVC;
+                break;
+              }
+              case 2: {
+                currentViewController = widget.vc3;
+                break;
+              }
+              case 3: {
+                currentViewController = widget.vc4;
+                break;
+              }
+            }
+
+
+          });
+        },
       ),
 
 
@@ -133,7 +152,8 @@ class _CenterFloatFabLocation2 extends FloatingActionButtonLocation {
 
   @override
   Offset getOffset(ScaffoldPrelayoutGeometry scaffoldGeometry) {
+
     final double fabX = (scaffoldGeometry.scaffoldSize.width - scaffoldGeometry.floatingActionButtonSize.width) / 2.0;
-    return Offset(fabX, (getDockedY(scaffoldGeometry)+23));
+    return Offset(fabX, (getDockedY(scaffoldGeometry)+(Utils.isPhone() ? 16 : 23 )));
   }
 }

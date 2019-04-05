@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:template_design/controller/homeViewController.dart';
-import 'package:template_design/controller/heyU.dart';
+import 'package:template_design/controller/GetCoaching/GetCoaching.dart';
+import 'package:template_design/controller/HeyU/heyU.dart';
 
 
 void main() {
@@ -47,7 +47,7 @@ class ListOfLayoutsViewController extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeViewController()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => GetCoaching()));
             },
           ),
 

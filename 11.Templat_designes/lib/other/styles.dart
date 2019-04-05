@@ -87,26 +87,49 @@ class Styles {
 class FontSize {
 
   static double h6(BuildContext context){
-    return Utils.isPhone(context) ? 10 : 13;
+    return Utils.isPhone() ? 10 : 13;
   }
   static double h5(BuildContext context){
-    return Utils.isPhone(context) ? 13 : 16;
+    return Utils.isPhone() ? 14 : 16;
   }
   static double h4(BuildContext context){
-    return Utils.isPhone(context) ? 15 : 19;
+    return Utils.isPhone() ? 15 : 19;
   }
   static double h3(BuildContext context){
-    return Utils.isPhone(context) ? 16 : 24;
+    return Utils.isPhone() ? 16 : 24;
   }
   static double h2(BuildContext context){
-    return Utils.isPhone(context) ? 23 : 29;
+    return Utils.isPhone() ? 23 : 29;
   }
   static double h1(BuildContext context){
-    return Utils.isPhone(context) ? 27 : 36;
+    return Utils.isPhone() ? 27 : 36;
   }
+
+
   static double h1Plus(BuildContext context){
-    return Utils.isPhone(context) ? 55 : 75;
+    return Utils.isPhone() ? 55 : 75;
   }
+
 
 }
 
+
+
+
+class Responsive {
+
+
+  static TextStyle textStyle({Color textColor = Colors.black, double sizeInPhone, String fontFamily = FontFamily.montserrat}) {
+    return TextStyle(
+        fontSize: (Utils.isPhone() ? sizeInPhone : sizeInPhone * 1.25),
+        color: textColor,
+        fontFamily: fontFamily,
+    );
+  }
+
+  static double iconSize({double sizeInPhone}) {
+    return (Utils.isPhone() ? sizeInPhone : sizeInPhone * 1.15);
+  }
+
+
+}

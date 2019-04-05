@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:template_design/other/const.dart';
 import 'package:template_design/other/styles.dart';
 import 'package:template_design/other/utils.dart';
-import 'package:template_design/controller/heyUHomeViewController.dart';
+import 'package:template_design/controller/HeyU/heyUHomeViewController.dart';
 
 
 
@@ -26,8 +26,8 @@ class HeyStateControllerState extends State<HeyStateController> {
         Navigator.push(context, MaterialPageRoute(builder: (context) => HeyUHomeViewController()));
       },
       child: Container(
-        height: Utils.isPhone(context) ? 40 : 50,
-        width: screenSize.width/(Utils.isPhone(context) ? 1.5 : 2),
+        height: Utils.isPhone() ? 40 : 50,
+        width: screenSize.width/(Utils.isPhone() ? 1.5 : 2),
         child: Center(
           child: Text("Sign up", style: Styles.h3(context: context, textColor: Const.colorRedStart),),
         ),
@@ -44,8 +44,8 @@ class HeyStateControllerState extends State<HeyStateController> {
     final screenSize = MediaQuery.of(context).size;
 
     return Container(
-      height: Utils.isPhone(context) ? 40 : 50,
-      width: screenSize.width/(Utils.isPhone(context) ? 1.5 : 2),
+      height: Utils.isPhone() ? 40 : 50,
+      width: screenSize.width/(Utils.isPhone() ? 1.5 : 2),
       decoration: BoxDecoration(
         color: Const.colorDarkRed,
         borderRadius: BorderRadius.circular(25),
@@ -113,7 +113,7 @@ class HeyStateControllerState extends State<HeyStateController> {
               children: <Widget>[
                 SizedBox(height: 50,),
                 inputViews(context: context, placeholderText: "johndoe@symu.co"),
-                SizedBox(height: (Utils.isPhone(context) ? 30 : 50),),
+                SizedBox(height: (Utils.isPhone() ? 30 : 50),),
                 inputViews(context: context, placeholderText: "*****************"),
                 SizedBox(height: 100,),
                 _signupButton(context: context),

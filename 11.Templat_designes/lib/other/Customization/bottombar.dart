@@ -46,7 +46,7 @@ class BottombarState extends State<Bottombar> {
   int _selectedIndex = 0;
 
   _updateIndex(int index) {
-//    widget.onTabSelected(index);
+    widget.onTabSelected(index);
     setState(() {
       _selectedIndex = index;
     });

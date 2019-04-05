@@ -10,12 +10,12 @@ import 'package:template_design/other/const.dart';
 
 
 
-class HomeViewController extends StatefulWidget {
+class GetCoaching extends StatefulWidget {
   @override
-  createState() => HomeViewControllerState();
+  createState() => GetCoachingState();
 }
 
-class HomeViewControllerState extends State<HomeViewController> {
+class GetCoachingState extends State<GetCoaching> {
 
 
   @override
@@ -162,10 +162,10 @@ class HomeViewControllerState extends State<HomeViewController> {
           Container(
             padding: EdgeInsets.only(left: 10, right: 10),
             child: GridView.count(
-              crossAxisCount: Utils.isPhone(context) ? 2 : 3,
+              crossAxisCount: Utils.isPhone() ? 2 : 3,
               shrinkWrap: true,
-              crossAxisSpacing: (Utils.isPhone(context)) ? 3 : 10,
-              mainAxisSpacing: (Utils.isPhone(context)) ? 3 : 10,
+              crossAxisSpacing: (Utils.isPhone()) ? 3 : 10,
+              mainAxisSpacing: (Utils.isPhone()) ? 3 : 10,
               primary: false,
               childAspectRatio: 1 / 1.4,
               children: <Widget>[
@@ -225,7 +225,7 @@ class HomeViewControllerState extends State<HomeViewController> {
   Widget _cardCell(BuildContext context, bool isAvailable, int index) {
     final screenSize = MediaQuery.of(context).size;
     final double profileImageSize =
-        screenSize.width / ((Utils.isPhone(context) ? 7 : 10));
+        screenSize.width / ((Utils.isPhone() ? 7 : 10));
 
 
     return Card(
@@ -313,7 +313,7 @@ class HomeViewControllerState extends State<HomeViewController> {
           ),
 
           Container(
-            height: Utils.isPhone(context) ? 35 : 55,
+            height: Utils.isPhone() ? 35 : 55,
             color: Const.colorGreen,
             child: Center(
               child: Text(

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/11.Templat_designes.iml" filepath="$PROJECT_DIR$/.idea/11.Templat_designes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template_design.iml" filepath="$PROJECT_DIR$/template_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/template_design_android.iml" filepath="$PROJECT_DIR$/android/template_design_android.iml" />
     </modules>
   </component>
 </project>
