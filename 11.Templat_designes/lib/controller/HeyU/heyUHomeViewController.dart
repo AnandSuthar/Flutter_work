@@ -5,16 +5,18 @@ import 'package:template_design/other/utils.dart';
 import 'dart:math' as math;
 import 'usersViewController.dart';
 import 'groupsViewController.dart';
+import 'contactsViewController.dart';
+import 'userProfileViewController.dart';
 
 
 
 
 class HeyUHomeViewController extends StatefulWidget {
 
-  UsersViewController usersVC = UsersViewController();
-  GroupsViewController groupsVC = GroupsViewController();
-  UsersViewController vc3 = UsersViewController();
-  UsersViewController vc4 = UsersViewController();
+  UsersViewController       usersVC       = UsersViewController();
+  GroupsViewController      groupsVC      = GroupsViewController();
+  ContactsViewController    contactsVC    = ContactsViewController();
+  UserProfileViewController userProfileVC = UserProfileViewController();
 
   @override
   createState() => HeyUHomeViewControllerState();
@@ -78,11 +80,11 @@ class HeyUHomeViewControllerState extends State<HeyUHomeViewController> {
                 break;
               }
               case 2: {
-                currentViewController = widget.vc3;
+                currentViewController = widget.contactsVC;
                 break;
               }
               case 3: {
-                currentViewController = widget.vc4;
+                currentViewController = widget.userProfileVC;
                 break;
               }
             }

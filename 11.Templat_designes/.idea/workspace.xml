@@ -4,7 +4,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="700b64dc-eae2-499e-a3a3-9c73074322aa" name="Default Changelist" comment="" />
+    <list default="true" id="700b64dc-eae2-499e-a3a3-9c73074322aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/controller/HeyU/contactsViewController.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/controller/HeyU/userProfileViewController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -126,17 +134,54 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1444947862">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.147" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.68" value="1" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="dart" value="43" />
+          <entry key="yaml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Dart" value="43" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dart" value="4091" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Dart" value="4091" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/groupsViewController.dart">
+        <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/contactsViewController.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="153" column="38" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -173,10 +218,18 @@
       <find>leftChatCell</find>
       <find>spaceForMSG</find>
       <find>padding</find>
+      <find>imageUrl</find>
+      <find>stack</find>
+      <find>bott</find>
+      <find>Edge</find>
+      <find>_membersImages</find>
+      <find>LIST&lt;</find>
+      <find>List&lt;</find>
+      <find>SingleChildScrollView</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -194,37 +247,79 @@
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/controller/HeyU/users.dart" />
         <option value="$PROJECT_DIR$/lib/controller/HeyU/usersList.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/controller/HeyU/heyU.dart" />
         <option value="$PROJECT_DIR$/lib/controller/GetCoaching/GetCoaching.dart" />
         <option value="$PROJECT_DIR$/lib/other/Customization/bottombar.dart" />
         <option value="$PROJECT_DIR$/lib/other/Customization/slideMenu.dart" />
         <option value="$PROJECT_DIR$/lib/other/utils.dart" />
         <option value="$PROJECT_DIR$/lib/other/styles.dart" />
-        <option value="$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart" />
-        <option value="$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart" />
-        <option value="$PROJECT_DIR$/lib/controller/HeyU/usersViewController.dart" />
         <option value="$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/popup_menu.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/controller/HeyU/usersViewController.dart" />
+        <option value="$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart" />
+        <option value="$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart" />
         <option value="$PROJECT_DIR$/lib/controller/HeyU/groupsViewController.dart" />
+        <option value="$PROJECT_DIR$/lib/controller/HeyU/userProfileViewController.dart" />
+        <option value="$PROJECT_DIR$/lib/controller/HeyU/contactsViewController.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="222" />
-    <option name="y" value="45" />
-    <option name="width" value="1172" />
-    <option name="height" value="599" />
+    <option name="x" value="38" />
+    <option name="y" value="379" />
+    <option name="width" value="1312" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="11.Templat_designes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="11.Templat_designes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11.Templat_designes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="11.Templat_designes" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11.Templat_designes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="11.Templat_designes" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11.Templat_designes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="11.Templat_designes" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="HeyU" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="11.Templat_designes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="11.Templat_designes" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="SingleChildScrollView&#9;FILE&#9;file:///Users/sunarctech2/Documents/DMG/flutter/packages/flutter/lib/src/widgets/single_child_scroll_view.dart&#10;List&lt;&#9;null&#9;null" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -272,9 +367,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="222" y="45" width="1172" height="599" extended-state="0" />
+    <frame x="38" y="379" width="1312" height="827" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27471566" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28188977" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -283,17 +379,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3263158" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.60157794" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49794662" weight="0.46289754" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32947233" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.32947233" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.32850942" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.32837838" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32947233" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5020534" side_tool="true" weight="0.5082873" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32947233" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32789856" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32991803" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -394,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/text_field.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="125" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/bottom_navigation_bar.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -485,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/DMG/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_device_type-0.1.0/lib/flutter_device_type.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -513,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/heyU.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="48" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controller/GetCoaching/GetCoaching.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -527,20 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/other/Customization/bottombar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-470">
           <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/other/utils.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/widgets/basic.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -565,31 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/other/styles.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="121" column="123" selection-start-line="121" selection-start-column="123" selection-end-line="121" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/widgets/text.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="223" column="8" selection-start-line="223" selection-start-column="8" selection-end-line="223" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="26" column="73" lean-forward="true" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
@@ -607,24 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/widgets/single_child_scroll_view.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/card.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/usersViewController.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1753">
-          <caret line="197" column="10" lean-forward="true" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -635,13 +658,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/groupsViewController.dart">
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/bin/cache/pkg/sky_engine/lib/core/list.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="237">
+          <caret line="468" column="7" selection-start-line="468" selection-start-column="7" selection-end-line="468" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/divider.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/text_field.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/painting/box_decoration.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/heyU.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="115" column="48" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/other/Customization/bottombar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/chatViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="209" column="41" lean-forward="true" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/material/input_decorator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2169" column="25" selection-start-line="2169" selection-start-column="15" selection-end-line="2169" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/heyUHomeViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/usersViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/userProfileViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/DMG/flutter/packages/flutter/lib/src/widgets/single_child_scroll_view.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="185" column="8" selection-start-line="185" selection-start-column="8" selection-end-line="185" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/other/utils.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/other/styles.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/groupsViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controller/HeyU/contactsViewController.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="153" column="38" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
         </state>
       </provider>
     </entry>

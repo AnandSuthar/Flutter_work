@@ -207,7 +207,7 @@ class ChatViewControllerState extends State<ChatViewController> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      resizeToAvoidBottomPadding: true,
+//      resizeToAvoidBottomPadding: true,
       appBar: AppBar(
         title: Text("Oswald Cobblepot", style: Responsive.textStyle(sizeInPhone: 17),),
         backgroundColor: Colors.white,
