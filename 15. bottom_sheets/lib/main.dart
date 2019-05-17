@@ -42,7 +42,8 @@ class MyHomePageState extends State<MyHomePage> {
 
     _scaffoldKey.currentState.showBottomSheet((context) {
       return Container(
-        height: 350,
+        margin: EdgeInsets.all(50),
+        height: 800,
         color: Colors.greenAccent,
         child: Center(
           child: Text("Hi botomsheet"),
@@ -59,7 +60,7 @@ class MyHomePageState extends State<MyHomePage> {
   void _showModelSheet() {
     showModalBottomSheet(context: context, builder: (builder) {
       return Container(
-        height: 800,
+        height: 200,
         color: Colors.greenAccent,
         child: Center(
           child: Text("Hi botomsheet"),
@@ -73,7 +74,7 @@ class MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      appBar: AppBar(title: Text("App bar"),),
+      appBar: AppBar(title: Text("App bar"), automaticallyImplyLeading: false,),
       key: _scaffoldKey,
       body: Center(
         child: Column(
