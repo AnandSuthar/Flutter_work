@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>791845245670-fiml0gt6bjnnt4b84nteven7krd97tt9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.791845245670-fiml0gt6bjnnt4b84nteven7krd97tt9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAos32QN9dnXJAQzSY6DGO2KiV96axfe34</string>
+	<key>GCM_SENDER_ID</key>
+	<string>791845245670</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sunarc.irox</string>
+	<key>PROJECT_ID</key>
+	<string>irox-cd602</string>
+	<key>STORAGE_BUCKET</key>
+	<string>irox-cd602.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:791845245670:ios:9860d10fab40c23a4be127</string>
+	<key>DATABASE_URL</key>
+	<string>https://irox-cd602.firebaseio.com</string>
+</dict>
+</plist>
