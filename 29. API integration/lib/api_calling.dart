@@ -34,19 +34,18 @@ class _ApiCallingState extends State<ApiCalling> {
             Center(
               child: RaisedButton(
                 child: Text("Call API"),
-                onPressed: () {
+                onPressed: () async {
 
                   setState(() => showLoader = true);
 
-                  UserExt.getUserInfo((user){
-                    Scaffold.of(context).showSnackBar(SnackBar(content: Text("${user.userId}"),));
+                  try {
+                    User user = await UserExt.getUserInfo();
+                    print(user.userId);
                     setState(() => showLoader = false);
-                  }, (error){
-                    if(error != null) {
-                      Scaffold.of(context).showSnackBar(SnackBar(content: Text("$error"),));
-                      setState(() => showLoader = false);
-                    }
-                  });
+                  } catch (error) {
+                    setState(() => showLoader = false);
+                    _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(error)));
+                  }
 
                 },
               ),

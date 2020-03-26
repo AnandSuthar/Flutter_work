@@ -75,22 +75,26 @@ const Map<int, String> _statusCodes = {
 class HTTP {
 
 
-  static Future<HttpResponse> get({@required String api}) async {
+  static Future<dynamic> get({@required String api}) async {
 
     if(Network.status == NetworkState.DISCONNECTED || Network.status == NetworkState.UNKNOWN) {
-      return HttpResponse(isSuccess: false, body: "No active internet connection");
+      throw "No network available";
     }
 
     try {
-      final apiUrl = Uri.encodeFull(api);
-      Response response = await http.get(apiUrl).timeout(_timeoutDuration);
-      return _modeledResponse(response);
+
+      Response response = await http.get(api).timeout(_timeoutDuration);
+      if(response.statusCode == HttpStatus.ok) {
+        return convert.jsonDecode(response.body);
+      } else {
+        final message = (Foundation.kDebugMode) ? "${response.statusCode}: ${_statusCodes[response.statusCode]}" : null; // Need to throw only for text and debug mode, for release mode need to change messages to something else
+        throw message;
+      }
+
     } on TimeoutException catch(_) {
-      return HttpResponse(isSuccess: false, body: "Unable to connect to the server");
+      throw "Unable to connect to the server";
     } catch (error) {
-      print("ERROR --- Exception : ${error.toString()} ------");
-      final body = (Foundation.kDebugMode) ? error.toString() : null;
-      return HttpResponse(isSuccess: false, body: body);
+      throw error.toString();
     }
 
 
@@ -99,50 +103,32 @@ class HTTP {
   static Future<HttpResponse> post({@required String api, dynamic body }) async {
 
     if(Network.status == NetworkState.DISCONNECTED || Network.status == NetworkState.UNKNOWN) {
-      return HttpResponse(isSuccess: false, body: "No active internet connection");
+      throw "No network available";
     }
 
     try {
-      final apiUrl = Uri.encodeFull(api);
-      Response response = await http.post(apiUrl,headers: null, body: body).timeout(_timeoutDuration);
-      return _modeledResponse(response);
-    } on TimeoutException catch(_) {
-      return HttpResponse(isSuccess: false, body: "Unable to connect to the server");
-    } catch (error) {
-      print("ERROR --- Exception : ${error.toString()} ------");
-      final body = (Foundation.kDebugMode) ? error.toString() : null;
-      return HttpResponse(isSuccess: false, body: error.toString());
-    }
 
-  }
-
-  static Future<HttpResponse> _modeledResponse(Response response) async {
-
-    try {
+      // header need to be implemented here
+      Response response = await http.post(api,headers: null, body: body).timeout(_timeoutDuration);
       if(response.statusCode == HttpStatus.ok) {
-        var jsonResponse = convert.jsonDecode(response.body);
-        return HttpResponse(isSuccess: true, body: jsonResponse);
+        return convert.jsonDecode(response.body);
       } else {
-        print("ERROR --- ${response.statusCode}: ${_statusCodes[response.statusCode]} ------");
-        final body = (Foundation.kDebugMode) ? "${response.statusCode}: ${_statusCodes[response.statusCode]}" : null;
-        return HttpResponse(isSuccess: false, body: body);
+        final message = (Foundation.kDebugMode) ? "${response.statusCode}: ${_statusCodes[response.statusCode]}" : null; // Need to throw only for text and debug mode, for release mode need to change messages to something else
+        throw message;
       }
+
+    } on TimeoutException catch(_) {
+      throw "Unable to connect to the server";
     } catch (error) {
-      print("ERROR --- Exception : ${error.toString()} ------");
-      final body = (Foundation.kDebugMode) ? error.toString() : null;
-      return HttpResponse(isSuccess: false, body: body);
+      throw error.toString();
     }
 
   }
 
 
+
 }
 
 
 
 
-class HttpResponse {
-  final bool isSuccess;
-  final dynamic body;
-  HttpResponse({@required this.body, @required this.isSuccess});
-}
